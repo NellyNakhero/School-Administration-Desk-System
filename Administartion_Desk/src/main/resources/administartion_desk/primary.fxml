@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administartion_desk.PrimaryController">
+   <children>
+      <HBox layoutY="6.0" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="332.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="308.0" layoutY="-3.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/signin_here.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <VBox prefHeight="400.0" prefWidth="237.0" style="-fx-background-color: #ededed;">
+               <children>
+                  <VBox alignment="CENTER" prefWidth="227.0" spacing="20.0">
+                     <children>
+                        <Label text="Login Here">
+                           <font>
+                              <Font name="Ani" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </VBox>
+                  <TextField prefHeight="61.0" prefWidth="237.0" promptText="*Enter Email">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField prefHeight="61.0" prefWidth="237.0" promptText="*Enter Password">
+                     <VBox.margin>
+                        <Insets bottom="145.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Text fill="#256bd3" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="primaryButton" onAction="#switchToSecondary" prefHeight="45.0" prefWidth="237.0" style="-fx-background-color: transparent; -fx-border-color: #ededed; -fx-border-width: 1px;" text="Login" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
