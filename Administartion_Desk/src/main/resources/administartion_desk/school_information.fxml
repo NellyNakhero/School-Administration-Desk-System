@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="871.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="administartion_desk.School_informationController">
+    <stylesheets>
+        <URL value="@/styles/school_information.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutY="-8.0" prefHeight="79.0" prefWidth="871.0" style="-fx-background-color: #1594e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="98.0" fitWidth="120.0" onMouseClicked="#backToDashbord" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-back-arrow-64.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="754.0" text="SCHOOL INFORMATION" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="100.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="98.0" prefHeight="440.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="420.0" prefWidth="429.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Name Of School:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="42.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="20.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Address:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="53.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="42.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Date Of Establishment:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="12.0" />
+                           </HBox.margin>
+                        </Label>
+                        <DatePicker prefHeight="28.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="2.0" top="10.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="100.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Type Of School:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="45.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="140.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="DEO, Division:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="38.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="180.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Educational Zone:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="18.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="220.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Educational District:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="8.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="9.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="260.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Electorate:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="44.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="35.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="260.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Municipal Council:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="340.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Police Area:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="70.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="420.0" prefWidth="429.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Postal Code:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="25.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="30.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="20.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="GS Division:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="School ID No:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="19.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="100.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="School Cencus No:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="14.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="140.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="School Exam No:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="180.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Province:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="50.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="220.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Total Land Area:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="1.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="260.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Name Of Principal:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="12.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="300.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Principal Contact:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="300.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Name Of Deputy:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="2.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="340.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Deputy Contact:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="250.0">
+                           <HBox.margin>
+                              <Insets left="20.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="11.0" layoutY="547.0" prefHeight="53.0" prefWidth="871.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="secondaryButton" onAction="#switchToPrimary" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="UPDATE" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="225.0" right="50.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="secondaryButton1" layoutX="10.0" layoutY="10.0" onAction="#switchToPrimary" prefHeight="50.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="PRINT" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
