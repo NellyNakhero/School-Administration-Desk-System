@@ -2,21 +2,27 @@
 
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="871.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="administartion_desk.Curriculum_detailsController">
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="871.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="administartion_desk.Curriculum_detailsController">
     <stylesheets>
         <URL value="@/styles/curriculum_details.css" />
     </stylesheets>
    <children>
       <HBox layoutX="36.0" layoutY="30.0" prefHeight="45.0" prefWidth="871.0" style="-fx-background-color: #1594e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="60.0" fitWidth="47.0" onMouseClicked="#backToDasboard" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="67.0" fitWidth="56.0" onMouseClicked="#backToDasboard" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/icons8-back-arrow-64.png" />
                </image>
@@ -29,6 +35,130 @@
                   <Font name="Abyssinica SIL" size="20.0" />
                </font>
             </Label>
+            <Label prefHeight="67.0" prefWidth="48.0" text="SEARCH" textFill="#797878">
+               <font>
+                  <Font name="Abyssinica SIL" size="12.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="65.0" prefWidth="134.0" style="-fx-background-color: transparent;">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutY="53.0" prefHeight="216.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane onMouseClicked="#gamesAndSports" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/basketball.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="33.0" layoutY="184.0" style="-fx-background-color: #1594e8;" text="Games &amp; Sports" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="10.0" onMouseClicked="#clubsWindow" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="21.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/drum.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="70.0" layoutY="184.0" style="-fx-background-color: #1594e8;" text="Clubs" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="220.0" layoutY="10.0" onMouseClicked="#recitalsWindow" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pin.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="184.0" style="-fx-background-color: #1594e8;" text="Recitals" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Pane>
+            <Pane layoutX="580.0" layoutY="10.0" onMouseClicked="#societiesWindow" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/student%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="62.0" layoutY="184.0" style="-fx-background-color: #1594e8;" text="Societies" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox layoutY="289.0" prefHeight="256.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView editable="true" prefHeight="256.0" prefWidth="876.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Gmes &amp; Sports" />
+                <TableColumn prefWidth="75.0" text="Clubs" />
+                  <TableColumn prefWidth="75.0" text="Recitals" />
+                  <TableColumn prefWidth="75.0" text="Societies" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="551.0" prefHeight="47.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="secondaryButton11" layoutX="469.0" layoutY="10.0" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="PRINT" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
          </children>
       </HBox>
    </children>

@@ -19,7 +19,7 @@ import javafx.scene.input.MouseEvent;
  *
  * @author nelly
  */
-public class Curriculum_detailsController implements Initializable {
+public class RecitalsController implements Initializable {
 
     @FXML
     private Button secondaryButton11;
@@ -34,31 +34,11 @@ public class Curriculum_detailsController implements Initializable {
 
     @FXML
     private void backToDasboard(MouseEvent event) throws IOException {
-        App.setRoot("student_dashboard");
+        App.setRoot("curriculum_details");
     }
 
     @FXML
     private void switchToPrimary(ActionEvent event) {
-    }
-
-    @FXML
-    private void gamesAndSports(MouseEvent event) throws IOException {
-        App.setRoot("sports_games");
-    }
-
-    @FXML
-    private void clubsWindow(MouseEvent event) throws IOException {
-        App.setRoot("clubs");
-    }
-
-    @FXML
-    private void recitalsWindow(MouseEvent event) throws IOException {
-        App.setRoot("recitals");
-    }
-
-    @FXML
-    private void societiesWindow(MouseEvent event) throws IOException {
-        App.setRoot("societies");
     }
     
 }

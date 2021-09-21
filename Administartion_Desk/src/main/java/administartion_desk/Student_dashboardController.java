@@ -64,4 +64,9 @@ public class Student_dashboardController implements Initializable {
 //        alertMessage();
         App.setRoot("health_details");
     }
+
+    @FXML
+    private void curriculum_details(MouseEvent event) throws IOException {
+        App.setRoot("curriculum_details");
+    }
 }
