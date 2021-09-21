@@ -64,7 +64,7 @@
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </Label>
-            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="26.0" prefWidth="169.0" text="Guardianship" textFill="WHITE">
+            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="101.0" onMouseClicked="#guardianDetails" prefHeight="26.0" prefWidth="169.0" text="Guardianship" textFill="WHITE">
                <font>
                   <Font name="FreeSerif" size="18.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Insets left="5.0" top="5.0" />
                </VBox.margin>
             </Label>
-            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="127.0" prefHeight="26.0" prefWidth="169.0" text="Health" textFill="WHITE">
+            <Label contentDisplay="CENTER" layoutX="10.0" layoutY="127.0" onMouseClicked="#healthDetails" prefHeight="26.0" prefWidth="169.0" text="Health" textFill="WHITE">
                <font>
                   <Font name="FreeSerif" size="18.0" />
                </font>

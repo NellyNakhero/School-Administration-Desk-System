@@ -12,6 +12,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonBar.ButtonData;
+import javafx.scene.control.ButtonType;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -32,12 +35,33 @@ public class Student_dashboardController implements Initializable {
     @FXML
     private void studentRegistration(MouseEvent event) throws IOException {
         App.setRoot("student_registration");
-        System.out.println("Something");
+        System.out.println("student registration");
     }
 
     @FXML
     private void studentDetails(MouseEvent event) throws IOException {
         App.setRoot("student_details");
     }
+
+    @FXML
+    private void guardianDetails(MouseEvent event) throws IOException {
+        App.setRoot("guardian_details");
+    }
     
+    void alertMessage(){
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Health and Fitness Confirmation Message");
+        alert.setContentText("Does the student have any pre-existing medical condition?");
+        ButtonType no = new ButtonType("No", ButtonData.NO);
+        ButtonType yes = new ButtonType("Yes", ButtonData.YES);
+         alert.getDialogPane().getButtonTypes().add(no);
+         alert.getDialogPane().getButtonTypes().add(yes);
+         alert.showAndWait();
+    }
+
+    @FXML
+    private void healthDetails(MouseEvent event) throws IOException {
+//        alertMessage();
+        App.setRoot("health_details");
+    }
 }

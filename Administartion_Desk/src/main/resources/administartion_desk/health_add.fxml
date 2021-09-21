@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="871.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="administartion_desk.Health_addController">
+    <stylesheets>
+        <URL value="@/styles/health_add.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="36.0" layoutY="30.0" prefHeight="45.0" prefWidth="871.0" style="-fx-background-color: #1594e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="74.0" onMouseClicked="#backToHealthDetailsPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-back-arrow-64.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="754.0" text="ADD MEDICAL CONDITION" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="100.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="129.0" prefHeight="148.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="420.0" prefWidth="429.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Admission Number:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="20.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Full Name:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="53.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="140.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Nationality:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="47.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="220.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Class Level:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="15.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefHeight="27.0" prefWidth="280.0" promptText="Select class level">
+                           <HBox.margin>
+                              <Insets left="45.0" top="10.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="420.0" prefWidth="429.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Guardianship">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="16.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefHeight="27.0" prefWidth="280.0" promptText="Select Guardian Relationship">
+                           <HBox.margin>
+                              <Insets left="10.0" top="8.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="20.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Guardian Name">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="280.0">
+                           <HBox.margin>
+                              <Insets left="10.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Contact">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="42.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="280.0">
+                           <HBox.margin>
+                              <Insets left="19.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="100.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Address">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="45.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="280.0">
+                           <HBox.margin>
+                              <Insets left="14.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="12.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="3.0" layoutY="74.0" prefHeight="47.0" prefWidth="871.0" style="-fx-background-color: #1594e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label text="SEARCH" textFill="#797878">
+               <HBox.margin>
+                  <Insets left="10.0" top="17.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Abyssinica SIL" size="13.0" />
+               </font>
+            </Label>
+            <TextField layoutX="10.0" layoutY="20.0" prefHeight="30.0" prefWidth="214.0" promptText="Enter admission number">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="3.0" layoutY="306.0" prefHeight="148.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="148.0" prefWidth="870.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Health (Medical) Condition:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="20.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Physicians Contact:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="53.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="140.0" prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Emergency Contact:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="47.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField prefHeight="27.0" prefWidth="283.0">
+                           <HBox.margin>
+                              <Insets left="15.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="525.0" prefHeight="74.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="secondaryButton" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="ADD" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="secondaryButton11" layoutX="469.0" layoutY="10.0" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="VIEW" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
