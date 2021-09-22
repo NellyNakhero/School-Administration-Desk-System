@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="870.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="administartion_desk.UpadteCurriculumController">
+    <stylesheets>
+        <URL value="@/styles/upadte_curriculum.css" />
+    </stylesheets>
+   <children>
+      <HBox prefHeight="45.0" prefWidth="871.0" style="-fx-background-color: #1594e8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="49.0" onMouseClicked="#backToDasboard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-back-arrow-64.png" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="820.0" text="UPDATE CURRICULUM" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="18.0" />
+               </font>
+               <padding>
+                  <Insets right="100.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="45.0" prefHeight="45.0" prefWidth="426.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label prefHeight="53.0" prefWidth="83.0" text="Level:">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox prefHeight="31.0" prefWidth="280.0" promptText="Select level">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox layoutY="90.0" prefHeight="240.0" prefWidth="881.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ListView editable="true" prefHeight="274.0" prefWidth="870.0" />
+         </children>
+      </HBox>
+      <HBox layoutY="352.0" prefHeight="55.0" prefWidth="881.0" style="-fx-background-color: #f0f0f0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label prefHeight="53.0" prefWidth="83.0" text="Name:">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="759.0" promptText="Enter name for the new curriculum">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox layoutY="399.0" prefHeight="53.0" prefWidth="881.0" style="-fx-background-color: #f0f0f0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label prefHeight="53.0" prefWidth="83.0" text="Code:">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" top="2.0" />
+               </HBox.margin>
+            </Label>
+            <TextField prefHeight="30.0" prefWidth="759.0" promptText="Enter code for the new curriculum">
+               <HBox.margin>
+                  <Insets top="8.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="542.0" prefHeight="47.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="secondaryButton11" layoutX="469.0" layoutY="10.0" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="PRINT" textFill="#f2eded">
+               <font>
+                  <Font name="Abyssinica SIL" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="444.0" prefHeight="45.0" prefWidth="426.0" style="-fx-background-color: #f0f0f0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets bottom="3.0" top="3.0" />
+         </padding>
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/plus.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
