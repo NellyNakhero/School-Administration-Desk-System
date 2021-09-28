@@ -61,7 +61,7 @@
             </TextField>
          </children>
       </HBox>
-      <HBox layoutY="105.0" prefHeight="409.0" prefWidth="871.0">
+      <HBox layoutY="105.0" prefHeight="424.0" prefWidth="871.0">
          <children>
             <VBox prefHeight="420.0" prefWidth="429.0">
                <children>
@@ -389,6 +389,40 @@
                         </TextField>
                      </children>
                   </HBox>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Exam Status:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="16.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefHeight="27.0" prefWidth="280.0" promptText="Select exam status">
+                           <HBox.margin>
+                              <Insets left="10.0" top="8.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="429.0">
+                     <children>
+                        <Label text="Awarded Badge:">
+                           <font>
+                              <Font name="Abyssinica SIL" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox prefHeight="27.0" prefWidth="280.0" promptText="Select badge to be awarded">
+                           <HBox.margin>
+                              <Insets left="5.0" top="8.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
                </children>
                <HBox.margin>
                   <Insets left="12.0" />
@@ -396,7 +430,7 @@
             </VBox>
          </children>
       </HBox>
-      <HBox alignment="CENTER" layoutY="532.0" prefHeight="47.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <HBox alignment="CENTER" layoutY="543.0" prefHeight="47.0" prefWidth="871.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Button fx:id="secondaryButton" onAction="#switchToPrimary" prefHeight="45.0" prefWidth="184.0" style="-fx-background-color: #1594e8;" text="UPDATE" textFill="#f2eded">
                <font>

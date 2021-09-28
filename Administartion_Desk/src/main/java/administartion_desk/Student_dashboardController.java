@@ -74,4 +74,9 @@ public class Student_dashboardController implements Initializable {
     private void examDetails(MouseEvent event) throws IOException {
         App.setRoot("examinations_details");
     }
+
+    @FXML
+    private void badgeDetails(MouseEvent event) throws IOException {
+        App.setRoot("badges_details");
+    }
 }
